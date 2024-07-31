@@ -1,0 +1,123 @@
+
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav id="alphabet-navigation">
+        <ul>
+            <!-- Alphabet navigation buttons -->
+            <li><a href="#section-a">A</a></li>
+            <li><a href="#section-b">B</a></li>
+            <!-- Add more letters as needed -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="section-a" class="alphabet-section">
+        <h2>A</h2>
+        <img src="images/a.jpg" alt="Image for A">
+    </section>
+
+    <section id="section-b" class="alphabet-section">
+        <h2>B</h2>
+        <img src="images/b.jpg" alt="Image for B">
+    </section>
+    <!-- Add more sections and images as needed -->
+
+    <!-- Go to Top button -->
+    <button id="go-to-top">Go to Top</button>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+<style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* You can change 'Arial' to any imported font */
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#alphabet-navigation {
+    margin-bottom: 20px;
+}
+
+#alphabet-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#alphabet-navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#alphabet-navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+#alphabet-navigation a:hover {
+    background-color: #555;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alphabet-section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.alphabet-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#go-to-top:hover {
+    background-color: #555;
+}
